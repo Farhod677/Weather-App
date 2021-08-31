@@ -1,0 +1,39 @@
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25rem;
+    left: 10rem;
+    height: 80vh;
+    margin-right: 20rem;
+
+    &__degree {
+        color: white;
+        font-size: 10rem;
+        margin-right: 5rem;
+    }
+    
+    &__city {
+        color: white;
+        font-size: 5rem;
+        margin-right: 5rem;
+        font-weight: normal;
+    }
+
+    &__text {
+        color: white;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        top: -15rem;
+        left: 10rem;
+
+        &__degree {
+            font-size: 5rem;
+        }
+    }
+}

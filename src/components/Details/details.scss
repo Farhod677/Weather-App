@@ -1,0 +1,34 @@
+.details {
+    hr {
+        height: 2px;
+        background-color: #9bb1c3;
+        border: 0;
+    }
+
+    &__heading {
+        color: #f9ffff;
+        font-size: 2.5rem;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            justify-content: space-around;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 2.4rem;
+    }
+
+    &__key {
+        color: #9bb1c3;
+    }
+
+    &__value {
+        color: #f5ffff;
+    }
+}

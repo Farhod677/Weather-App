@@ -1,0 +1,42 @@
+.info {
+    background-image: url(../../images/clear.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 70%;
+    height: 100vh;
+    
+    &__image {
+        position: relative;
+        top: 10%;
+        left: 30%;
+    }
+    
+    &--sunny {
+        background-image: url(../../images/sunny.jpg);
+    }
+
+    &--clear {
+        background-image: url(../../images/clear.jpg);
+    }
+
+    &--cloudy {
+        background-image: url(../../images/cloudy.jpg);
+    }
+
+    &--rainy {
+        background-image: url(../../images/rainy.jpg);
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        height: 90vh;
+        padding: 4rem;
+
+        &__image {
+            left: 20%;
+        }
+    }
+}
